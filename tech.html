@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/aframevr/aframe-extras@7.1.0/dist/aframe-extras.min.js"></script>
+    <title>فصل التقنية</title>
+</head>
+<body>
+    <a-scene>
+        <a-sky color="#000000"></a-sky> 
+        <a-entity position="0 0 0" rotation="-90 0 0" geometry="primitive: plane; width: 20; height: 20" material="color: #1A237E"></a-entity>
+
+        <a-torus position="0 2 -8" radius="2" radius-tubular="0.1" segments-tubular="32" color="#673AB7"
+            animation="property: rotation; to: 360 0 0; loop: true; dur: 8000; easing: linear;"></a-torus>
+        <a-text value="عالم البرمجة والبيانات" width="8" position="0 5 -10" align="center" color="#FFFFFF" font="mozillavr"></a-text>
+
+        <a-box position="-8 0.5 0" width="1" height="1" depth="0.1" color="#CCCCCC"
+            link="href: index.html; title: العودة للردهة">
+            <a-text value="العودة" width="2" position="0 0 0.15" align="center" color="#000000" font="mozillavr"></a-text>
+        </a-box>
+    </a-scene>
+</body>
+</html>

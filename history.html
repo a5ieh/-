@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/aframevr/aframe-extras@7.1.0/dist/aframe-extras.min.js"></script>
+    <title>فصل التاريخ</title>
+</head>
+<body>
+    <a-scene>
+        <a-sky color="#FFECB3"></a-sky> 
+        <a-plane position="0 0 0" rotation="-90 0 0" width="20" height="20" color="#BCAAA4"></a-plane>
+
+        <a-pyramid position="0 2.5 -8" height="5" radius-bottom="3" color="#795548"
+            animation="property: rotation; to: 0 360 0; loop: true; dur: 20000; easing: linear;"></a-pyramid>
+        <a-text value="استكشاف الحضارات" width="8" position="0 5 -10" align="center" color="#000000" font="mozillavr"></a-text>
+
+        <a-box position="-8 0.5 0" width="1" height="1" depth="0.1" color="#CCCCCC"
+            link="href: index.html; title: العودة للردهة">
+            <a-text value="العودة" width="2" position="0 0 0.15" align="center" color="#000000" font="mozillavr"></a-text>
+        </a-box>
+    </a-scene>
+</body>
+</html>

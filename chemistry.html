@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/aframevr/aframe-extras@7.1.0/dist/aframe-extras.min.js"></script>
+    <title>فصل الكيمياء</title>
+</head>
+<body>
+    <a-scene>
+        <a-sky color="#101010"></a-sky> 
+        <a-plane position="0 0 0" rotation="-90 0 0" width="20" height="20" color="#3A3A3A"></a-plane>
+
+        <a-entity position="0 2 -5">
+            <a-sphere radius="1.2" color="#FF5722" 
+                      animation="property: rotation; to: 0 360 0; loop: true; dur: 8000; dir: alternate"></a-sphere>
+            <a-text value="C₆H₁₂O₆" width="5" position="0 2.5 0" align="center" color="#FFFFFF" font="mozillavr"></a-text>
+        </a-entity>
+
+        <a-entity sound="src: url(lab_bubbles.mp3); autoplay: true; loop: true; volume: 0.6"></a-entity>
+        
+        <a-box position="-8 0.5 0" width="1" height="1" depth="0.1" color="#CCCCCC"
+            link="href: index.html; title: العودة للردهة">
+            <a-text value="العودة" width="2" position="0 0 0.15" align="center" color="#000000" font="mozillavr"></a-text>
+        </a-box>
+    </a-scene>
+</body>
+</html>

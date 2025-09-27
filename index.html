@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/gh/aframevr/aframe-extras@7.1.0/dist/aframe-extras.min.js"></script>
+    <script src="https://unpkg.com/aframe-event-set-component@4.2.1/dist/aframe-event-set-component.min.js"></script>
+    <title>الردهة التعليمية: عوالم التعلم</title>
+</head>
+<body>
+    <a-scene>
+        <a-sky src="space_nebula.jpg" radius="300"></a-sky> 
+        <a-entity position="0 1.6 0">
+            <a-camera user-height="1.6"></a-camera>
+        </a-entity>
+
+        <a-box class="door" position="-4 1.5 -5" width="1.5" height="3" depth="0.2" color="#3F51B5"
+            link="href: math.html; title: فصل الرياضيات"
+            event-set__enter="_event: mouseenter; color: #6C7BBF"
+            event-set__leave="_event: mouseleave; color: #3F51B5">
+            <a-text value="الرياضيات" width="5" position="0 0 0.15" align="center" color="#FFFFFF"></a-text>
+        </a-box>
+
+        <a-box class="door" position="-1.5 1.5 -5" width="1.5" height="3" depth="0.2" color="#FF5722"
+            link="href: chemistry.html; title: فصل الكيمياء"
+            event-set__enter="_event: mouseenter; color: #FF8A5F"
+            event-set__leave="_event: mouseleave; color: #FF5722">
+            <a-text value="الكيمياء" width="5" position="0 0 0.15" align="center" color="#FFFFFF"></a-text>
+        </a-box>
+
+        <a-box class="door" position="1.5 1.5 -5" width="1.5" height="3" depth="0.2" color="#00BCD4"
+            link="href: physics.html; title: فصل الفيزياء"
+            event-set__enter="_event: mouseenter; color: #4DD0E1"
+            event-set__leave="_event: mouseleave; color: #00BCD4">
+            <a-text value="الفيزياء" width="5" position="0 0 0.15" align="center" color="#FFFFFF"></a-text>
+        </a-box>
+
+        <a-box class="door" position="4 1.5 -5" width="1.5" height="3" depth="0.2" color="#4CAF50"
+            link="href: biology.html; title: فصل الأحياء"
+            event-set__enter="_event: mouseenter; color: #79C57C"
+            event-set__leave="_event: mouseleave; color: #4CAF50">
+            <a-text value="الأحياء" width="5" position="0 0 0.15" align="center" color="#FFFFFF"></a-text>
+        </a-box>
+
+        <a-box class="door" position="-2.75 1.5 -8" width="1.5" height="3" depth="0.2" color="#795548"
+            link="href: history.html; title: فصل التاريخ"
+            event-set__enter="_event: mouseenter; color: #A1887F"
+            event-set__leave="_event: mouseleave; color: #795548">
+            <a-text value="التاريخ" width="5" position="0 0 0.15" align="center" color="#FFFFFF"></a-text>
+        </a-box>
+
+        <a-box class="door" position="2.75 1.5 -8" width="1.5" height="3" depth="0.2" color="#9C27B0"
+            link="href: tech.html; title: فصل التقنية"
+            event-set__enter="_event: mouseenter; color: #BA68C8"
+            event-set__leave="_event: mouseleave; color: #9C27B0">
+            <a-text value="التقنية" width="5" position="0 0 0.15" align="center" color="#FFFFFF"></a-text>
+        </a-box>
+    </a-scene>
+</body>
+</html>
